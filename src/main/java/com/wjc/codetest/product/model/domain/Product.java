@@ -35,4 +35,7 @@ public class Product {
     public String getName() {
         return name;
     }
+    // 문제: 이미 @Getter가 있는데, 명시적으로 get 메서드 재정의 → 불필요한 코드 중복
+    // 원인: Lombok + 수동 getter 혼용
+    // 개선안: 중복된 getter 제거 / Lombok 일관성 유지
 }
